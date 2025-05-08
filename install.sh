@@ -8,7 +8,7 @@ cat <<EOL > .devcontainer/devcontainer.json
             "version": "latest"
         }
     },
-    "postStartCommand": "python3 /workspaces/monitor/igmonitor.py",
+    "postStartCommand": "python3 /workspaces/song/g.py",
     "customizations": {
         "vscode": {
             "settings": {
