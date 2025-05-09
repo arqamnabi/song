@@ -12,7 +12,7 @@ RUN apt-get update && \
 RUN useradd -m myuser && echo "myuser ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 
 # Install Python dependencies
-RUN pip install telebot
+RUN pip install telebot flask
 
 # Copy your script into the image
 COPY g.py /app/g.py
