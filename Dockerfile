@@ -6,8 +6,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 # Update packages, install sudo and ffmpeg
 RUN apt-get update && \
-    apt-get install -y sudo ffmpeg && \
-    apt-get upgrade -y
+    apt-get install -y sudo ffmpeg
 
 # Optional: Create a user and give sudo access (if you really need "sudo")
 RUN useradd -m myuser && echo "myuser ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
